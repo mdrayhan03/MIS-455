@@ -1,0 +1,51 @@
+.contact {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.first-part{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../../assets/media/news.jpg") no-repeat center center;
+    background-size: cover;
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.first-part:hover {
+    background: url("../../assets/media/contact_.png") no-repeat center center;
+    background-size: cover;
+    color: red;
+}
+
+.option-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.option-part .option:first-child {    
+    text-align: justify;    
+}
+
+.option-part .option:last-child {
+    flex-shrink: 0;
+}
+
+.option-part .option:last-child a {
+    text-decoration: none;
+    color: black;
+}
+
+.option-part .option:last-child a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+}

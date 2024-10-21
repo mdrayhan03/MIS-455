@@ -1,0 +1,60 @@
+.home {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.first-part img {
+    width: 100%;
+    height: auto;
+}
+
+.first-part h1 {
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.first-part h1:hover {
+    color: blue;
+}
+
+.first-part p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.option-part {
+    margin: 50px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+.option-part a {
+    text-decoration: none;
+}
+
+.option-part .option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.option-part .option {
+    color: black;
+    font-weight: bold;
+    font-size: 36px;
+    transition: 0.5s ease-in-out;
+}
+
+.option-part .option:hover {
+    color: white;
+    background: url("../../assets/media/news.jpg") no-repeat center center;
+    background-size: cover;
+}
