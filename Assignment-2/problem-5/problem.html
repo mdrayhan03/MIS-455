@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-5</title>
+</head>
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+</style>
+<body>
+    <h1>Problem-5</h1>
+    <p>Statement: Ask for – Name, Total Tuition Fees & Birth year from the user. Calculate and display total discount amount as per the following rules:
+        If total T. Fees is more than 50000 and age is above 21, apply 15% discount.
+        If total T. Fees is more than 40000 and age is above 20, apply 10% discount.
+        If total T. Fees is more than 30000 and age is above19, apply 5% discount.
+        Otherwise, apply 2% discount.
+        Display – discount amount and payable tuition fees mentioning Name of the user</p>
+    <form action="#">
+        <label for="nameID">Name</label>
+        <input type="text" id="nameID">
+        <label for="feeID">Total Tuiton Fee</label>
+        <input type="text" id="feeID">
+        <label for="bdID">Birth year</label>
+        <input type="number" id="bdID">
+        <button onclick="calculateFunction()">Submit</button>
+        <div class="output"></div>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>
