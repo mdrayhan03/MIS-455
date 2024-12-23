@@ -1,0 +1,143 @@
+:root {
+    --color1: #000000;
+    --color2: #502F4C;
+    --color3: #70587C;
+    --color4: #C8B8DB;
+    --color5: #F9F4F5;
+    --font1: Arial, Helvetica, sans-serif;
+    --font2: 'Times New Roman', Times, serif;
+    --font3: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color4);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    background-color: var(--color2);
+    color: var(--color4);
+    box-shadow: 0 0 10px var(--color1);
+}
+
+.logo-img {
+    height: 40px;
+    aspect-ratio: 1/1;
+}
+
+.logo-text {
+    font-family: var(--font3);
+    font-size: 1.75rem;
+}
+
+.search {
+    padding: 0 10px;
+    border-radius: 30px;
+    border: 2px inset var(--color3);
+    display: flex;
+    justify-content: end;
+    align-items: center;    
+}
+
+.search input {
+    padding: 0 10px;
+    flex: 1;
+    background: transparent;
+    outline: 0;
+    border: 0;
+    color: var(--color5);
+}
+
+.search button {
+    background: transparent;
+    outline: 0;
+    border: 0;
+    color: var(--color4);
+}
+
+main {
+    flex: 1;
+}
+
+.info {
+    background-color: var(--color3);
+    box-shadow: 0 0 10px 5px var(--color2);
+}
+
+.buttonDiv {
+    width: 100%;
+    text-align: center;
+}
+
+.buttonDiv button {
+    padding: 5px 20px;
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 1.0rem;
+    outline: 0;
+    border: 0;
+    background-color: var(--color2);
+    color: var(--color4);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--color2);
+}
+
+.weatherDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 300px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header ul {
+        padding-right: 10px;
+        gap: 10px;
+    }
+    header ul li span {
+        display: none;
+    }
+    .logo-img {
+        height: 30px;
+    }
+    .logo-text {
+        display: none;
+    }
+    .search i {
+        display: none;
+    }
+    .weatherDiv {
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
